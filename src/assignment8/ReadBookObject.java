@@ -8,11 +8,14 @@ class ReadBookObject {
 		ObjectInputStream ois = new ObjectInputStream(fio);
 		
 		Book b = (Book)ois.readObject();
-		if(b.price > 500) {
-			b.price = b.price * (10/100) - b.price;
+		float finalPrice = b.price;
+
+		if (b.price > 500) {
+		    finalPrice = b.price - (b.price * 0.1f);
 		}
 		
 		b.displayBook();
+		System.out.println("Final Price : " + finalPrice);
 		fio.close();
 		ois.close();
 	}
