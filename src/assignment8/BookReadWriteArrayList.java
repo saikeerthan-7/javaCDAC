@@ -2,7 +2,7 @@ package assignment8;
 import java.io.*;
 import java.util.*;
 
-public class BookReadWiteArrayList {
+public class BookReadWriteArrayList {
 
 	public static void main(String[] args) throws Exception{
 		FileOutputStream fos = new FileOutputStream("bookObj.txt");
@@ -18,6 +18,7 @@ public class BookReadWiteArrayList {
 			BookArrayList b = new BookArrayList(Integer.parseInt(arr[0]), arr[1], arr[2], Float.parseFloat(arr[3]));
 			oos.writeObject(b);
 		}
+		
 		br.close();
 		oos.close();
 		fos.close();
