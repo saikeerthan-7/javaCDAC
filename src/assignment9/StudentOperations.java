@@ -17,7 +17,6 @@ public class StudentOperations {
 	}
 
 
-
 	public void insertStudent() {
 		try {
 			String q = "insert into student values(?, ?, ?, ?)";

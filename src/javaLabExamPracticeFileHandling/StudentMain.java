@@ -1,14 +1,16 @@
 package javaLabExamPracticeFileHandling;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class StudentMain {
 
     public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	ReadWriteStudentObj rw = new ReadWriteStudentObj();
+    	
 
-        ArrayListOperations ao = new ArrayListOperations();
 
-        Scanner s = new Scanner(System.in);
+        
 
         while(true) {
 
@@ -46,6 +48,7 @@ public class StudentMain {
                     break;
 
                 case 6:
+                	
                     System.exit(0);
 
                 default:
