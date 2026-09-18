@@ -14,7 +14,11 @@ public class CountCharacters {
 		fw.write(str);
 		fw.close();
 		int ch;
+<<<<<<< HEAD
 		FileReader fr=new FileReader("characterfile.txt");
+=======
+		FileReader fr =new FileReader("characterfile.txt");
+>>>>>>> 0898fee2b00bebdc026391ec80ed1ea8a949b822
 		int upperCase = 0, lowerCase = 0, digits = 0, specialChar = 0, spaces = 0;
 		while((ch=fr.read())!=-1){
 			if(Character.isUpperCase(ch)) {
